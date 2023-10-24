@@ -1,0 +1,30 @@
+{
+    "<!DOCTYPE html>": {
+        "descripcion": "es la etiqueta que se utiliza para definir el tipo de documento"
+    },
+    "<html></html>": {
+        "descripcion": "es la etiqueta que se utiliza para contener todo el documento, es decir, es la etiqueta que contiene a todas las demás etiquetas (head y body)",
+        "contenido": [
+            {
+                "head": {
+                    "descripcion": "es la etiqueta que se utiliza para contener la información del documento, es decir, es la etiqueta que contiene a las etiquetas que definen el título, el estilo, los scripts, metadatos, etc.",
+                    "contenido": [
+                        {
+                            "title": "es la etiqueta que se utiliza para definir el título del documento",
+                            "meta": {
+                                "description": "es la etiqueta que se utiliza para definir los metadatos del documento",
+                                "contenido": [
+                                    {
+                                        "charset": "es la etiqueta que se utiliza para definir el tipo de codificación de caracteres del documento",
+                                        "name": "es la etiqueta que se utiliza para definir el nombre de los metadatos del documento",
+                                        "content": "es la etiqueta que se utiliza para definir el contenido de los metadatos del documento"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
