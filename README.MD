@@ -3,4 +3,7 @@
 ## INDICE
 
 1) [Consola](./Consola/)
-    - [PowerShell](./Consola/PowerShell.json)
+    - [Windows](./Consola/Windows/)
+        - [PowerShell](./Consola/Windows/PowerShell/)
+    - [Linux](./Consola/Linux/)
+        - [Bash](./Consola/Linux/Bash/)
