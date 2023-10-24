@@ -1,0 +1,29 @@
+{
+    "iniciar un proyecto de git": "git init",
+    "stage": {
+        "agregar": {
+            "un archivo": "git add <path del archivo>",
+            "todos los archivos": "git add .",
+            "todos los archivos de un tipo": "git add *.txt",
+            "todos los archivos de un tipo en una carpeta": "git add docs/*.txt",
+            "todos los archivos de un tipo en una carpeta y subcarpetas": "git add docs/**/*.txt"
+        },
+        "quitar": {
+            "un archivo": "git reset <path del archivo>",
+            "todos los archivos": "git reset",
+            "todos los archivos del stage y del working directory": "git reset --hard"
+        }
+    },
+    "ver": {
+        "el estado de los archivos": "git status",
+        "el historial de commits": "git log",
+        "un numero especifico de commits": "git log -<numero de commits>",
+        "un numero especifico de commits de un archivo": "git log -<numero de commits> <path del archivo>",
+        "el historial de commits con sus cambios": "git log -p",
+        "el historial de commits de un archivo": "git log <path del archivo>",
+        "el historial de commits de un archivo con sus cambios": "git log -p <path del archivo>",
+        "el historial de commits de un archivo con sus cambios y sus diferencias": "git log -p -w <path del archivo>"
+    },
+    "hacer un commit": "git commit -m \"<mensaje>\"",
+    "hacer un commit con un archivo": "git commit <path del archivo> -m \"<mensaje>\""
+}
