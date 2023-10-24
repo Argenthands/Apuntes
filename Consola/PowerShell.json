@@ -1,0 +1,15 @@
+{
+    "comandos": {
+        "cambiar de directorio": {
+            "ir al directorio raiz": "cd ~",
+            "ir al directorio anterior": "cd ..",
+            "ir al directorio actual": "cd .",
+            "ir a un directorio anidado": "cd /nombre del directorio/subcarpeta"
+        },
+        "listar directorio": ["ls", "dir"],
+        "crear elemento": "New-Item -ItemType <Directory|File> -Path <aqui va la direccion relativa del directorio>",
+        "renombrar elemento": "Rename-Item -Path <aqui va la direccion relativa del archivo> -NewName <aqui va el nuevo nombre del archivo>",
+        "copiar elemento": "Copy-Item -Path <aqui va la direccion relativa del archivo> -Destination <aqui va la direccion relativa de la carpeta donde se copiara el archivo>",
+        "eliminar elemento": "Remove-Item -Path <aqui va la direccion relativa del archivo>"
+    }
+}
