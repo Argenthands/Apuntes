@@ -1,0 +1,43 @@
+{
+	"install": "winget install -e --id PostgreSQL.PostgreSQL",
+	"version": "psql --version",
+	"login": "psql -U <username> -d <database> -h <host> -p <port> -W",
+	"usuarios": [
+		{
+			"default username": "postgres",
+			"default password": "postgres",
+			"default database": "postgres",
+			"default host": "localhost",
+			"default port": "5432"
+		},
+		{
+			"username": "alejandro",
+			"password": "pass",
+			"database": "alejandro",
+			"host": "localhost",
+			"port": "5432"
+		}
+	],
+	"syntax": {
+		"ayuda": ["\\?"],
+		"salir": ["\\q"],
+		"listar usuarios": ["\\du"],
+		"listar bases de datos": ["\\list", "\\l"],
+
+		"crear una base de datos": ["CREATE DATABASE <database>"],
+		"conectar a una base de datos": ["\\c <database>"],
+		"borrar una base de datos": ["DROP DATABASE <database>"],
+
+		"elegir esquema": ["SET search_path TO <schema>"],
+
+		"crear una tabla": [
+			"CREATE TABLE <table> (<column1> <type of column1> <constraint>, <column2> <type of column2> <constraint>, ...)",
+			"CREATE TABLE <schema.table> (<column1> <type of column1> <constraint>, <column2> <type of column2> <constraint>, ...)"
+		],
+		"editar una tabla": ["ALTER TABLE <table> <action> <column> <type of column> <constraint>"],
+		"opciones de <action>": ["ADD", "DROP COLUMN", "RENAME TO"],
+		"listar columnas de una tabla": ["\\d <table>"],
+		"listar tablas": ["\\dt"],
+		"borrar una tabla": ["DROP TABLE <table>"]
+	}
+}
